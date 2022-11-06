@@ -1,0 +1,98 @@
+@import "../Variables.scss";
+
+main {
+    background-color: $gradient1;
+    height: 100vh;
+    width: 100%;
+
+    div#hero-img {
+        width: 100%;
+        height: 30%;
+        background: url("../../../base-apparel-coming-soon-master/images/hero-mobile.jpg") center;
+    }
+
+    section {
+        padding: 4em 1.18em;
+        font-family: $fontFam;
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 3rem;
+            letter-spacing: .7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: .5em;
+
+            span {
+                color: $primaryDesaturatedRed;
+                font-weight: 300;
+            }
+        }
+
+        div#main-text {
+            margin: 0 auto;
+            margin-bottom: 2.5em;
+
+            p {
+                line-height: 1.6rem;
+                color: $primaryDesaturatedRed;
+                font-size: $bodyFont;
+            }
+        }
+
+        .input-btn {
+            width: 100%;
+            position: relative;
+            // background-color: red;
+
+            input {
+                width: 100%;
+                height: 3.9em;
+                margin: 0;
+                padding: 0;
+                // padding-left: 1em;
+                border-radius: 40px;
+                border: .2px solid $neutralGrayRed;
+
+                
+                &::placeholder {
+                    
+                    margin-left: 2em;
+                    
+                }
+                
+                &:focus {
+                    // border: 2px solid red;
+                    // border: .2px solid $neutralGrayRed;
+                    
+                    outline: none;
+                }
+            }
+            
+
+            button {
+                position: absolute;
+                top: 0;
+                right: -.2em;
+                z-index: 2;
+                width: 20%;
+                height: 4em;
+                border-radius: 40px;
+                // outline: none;
+                border: none;
+                background: $gradient2;
+                // box-shadow: 85px 87px 77px -31px rgba(0,0,0,0.33);
+                box-shadow: 6px 14px 38px -6px $primaryDesaturatedRed;
+
+                &:focus {
+                    // border: none;
+                    outline: none;
+                }
+            }
+        }
+        
+
+
+        
+    }
+}
